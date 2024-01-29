@@ -44,3 +44,8 @@ test('trigger click event on button ', async () => {
   await button.trigger('click')
   expect(wrapper.vm.addition(1,2)).toBe(3)
 })
+
+test('Wacharapon Chaiwan 6404101338 ', () => {
+  const wrapper = shallowMount(FunctionPage)
+  expect(wrapper.find('form > input').exists("Wacharapon","Chaiwan","6404101338")).toBe(true)
+})
